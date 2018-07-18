@@ -1,0 +1,23 @@
+@mixin animation-lifecycle-entering($animation) {
+  .#{$animation}-entering {
+    @content
+  }
+}
+
+@mixin animation-lifecycle-entered($animation) {
+  .#{$animation}-entered {
+    @content
+  }
+}
+
+@mixin animation-lifecycle-exiting($animation) {
+  .#{$animation}-exiting {
+    @content
+  }
+}
+
+@mixin animation-lifecycle-exited($animation) {
+  .#{$animation}-exited {
+    @content
+  }
+}

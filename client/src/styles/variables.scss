@@ -1,0 +1,102 @@
+// responsive
+@import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
+// mixins
+@import "mixins/mixins";
+
+$fullHd: 1024px;
+$hd: 768px 1024px;
+$mobile1: max-width 330px;
+$mobile2: max-width 500px;
+$mobile3: max-width 600px;
+$mobile4: max-width 768px;
+$desktop1: min-width 768px;
+$desktop2: max-width 800px;
+$desktop3: max-width 1024px;
+$desktop4: max-width 1350px;
+$desktop5: max-width 1600px;
+
+$snippetOfferBreakpoint: 1024px 1300px;
+
+// colors
+$white: #ffffff;
+$customWhite: #fefefe;
+$red: #ff262e;
+$mediumRed: #d92229;
+$darkRed: #a80e14;
+$orange : #ff8c00;
+$purple: #ac6cba;
+$blue: #2dccff;
+$mediumBlue: #08b6ed;
+$darkBlue: #168db2;
+$inputBorder: #d3d3d3;
+$black: #24232b;
+$projectColorText: #fefefe;
+$footerColorText: #a2a2a2;
+$footerTopLineColor: #e9e9e9;
+$warm-grey: #a2a2a2;
+$warm-grey-two: #959595;
+$deep-sky-blue: #0084ff;
+$greyish: #b7b7b7;
+$dusk-blue: #20437e;
+$pinkish-grey: #c2c2c2;
+$dark-grey: #4d4d4d;
+$lime: #32CD32;
+$grape: #422963;
+$blueberry: #5a3788;
+$blueberry-two: #533aa3;
+$dark-slate-blue-two:#322265;
+$dark-two: #192731;
+$dark-grey-blue: #293e4d;
+$reddish: #c42f2f;
+$tomato: #e23939;
+$navy: #041f40;
+$twilight-blue:#0c3465;
+$white-two: #ebebeb;
+
+
+  // heights
+$navigationHeight: 80px;
+$navigationHeightMobile: 60px;
+
+// widths
+$navigationWidthDesktop: 70%;
+$offerSnippetWidthDesktop: 100% - $navigationWidthDesktop;
+$navigationWidthMobile: 30%;
+$hamburgerWidth: 100% - $navigationWidthMobile;
+
+// z-indexes
+$loadingPageZIndex: 2000; // top-over-top, always
+$snippetZIndex: 1000;
+$topMenuZIndex: 999; // top menu snippet
+$scrollButtonZIndex: 998;
+$technologyNameZIndex: 200;
+$justOverTopZIndex: 2;
+$normalZIndex: 1;
+$nullZIndex: 0;
+
+// shadows
+$standardShadowColor: rgba(0,0,0,0.75);
+
+// animations
+$standardTransition: all .15s ease-out;
+
+
+@mixin self-clear() {
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+@mixin background-image() {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin standard-box-shadow($color) {
+  -webkit-box-shadow: 0 0 10px 0 $color;
+  -moz-box-shadow: 0 0 10px 0 $color;
+  box-shadow: 0 0 10px 0 $color;
+}

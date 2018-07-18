@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+
+.checkbox {
+  .title {
+    height: 70px;
+    background-color: aqua;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .content {
+    height: 100px;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+  }
+}
